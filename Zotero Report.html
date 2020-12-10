@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9Cg==">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_3NH7E6WF" class="item attachment">
+			<h2>7. SCAP Analysis July 2020 (2).docx</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_Y7IQPD9X" class="item attachment">
+			<h2>8. Small Claims Auto Settlement.docx</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_482977DK" class="item webpage">
+			<h2>2020 Winners</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>2020 Winners</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.postevents.co.uk/insuranceclaimsandfraudawards/2020-winners">http://www.postevents.co.uk/insuranceclaimsandfraudawards/2020-winners</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 5:28:21 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Claims &amp; Fraud Awards</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 5:28:21 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 5:28:21 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_AGPMP5U2">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HWNIUJY6" class="item webpage">
+			<h2>2021 insurance industry outlook | Deloitte Insights</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www2.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-outlooks/insurance-industry-outlook.html">https://www2.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-outlooks/insurance-industry-outlook.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:31 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:31 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:31 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_9BM3DW2V">2021 insurance industry outlook | Deloitte Insights					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QB9HPYQ7" class="item attachment">
+			<h2>abi_bro4467_state_of_market_v10.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro4467_state_of_market_v10.pdf">https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro4467_state_of_market_v10.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 4:53:36 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:53:36 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:53:36 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_GZ53BWME" class="item attachment">
+			<h2>abi_bro6778_state_of_market_2019_web.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro6778_state_of_market_2019_web.pdf">https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro6778_state_of_market_2019_web.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:50 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:50 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:50 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_DBYKGY5B" class="item attachment">
+			<h2>abi_bro6778_state_of_market_2019_web.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro6778_state_of_market_2019_web.pdf">https://www.abi.org.uk/globalassets/files/publications/public/data/abi_bro6778_state_of_market_2019_web.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:49:09 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:49:09 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:49:09 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_QHNRS3ZJ" class="item attachment">
+			<h2>Analysis and Valuation of Insurance Companies - Final.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.columbia.edu/~dn75/Analysis%20and%20Valuation%20of%20Insurance%20Companies%20-%20Final.pdf">http://www.columbia.edu/~dn75/Analysis%20and%20Valuation%20of%20Insurance%20Companies%20-%20Final.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 3:44:10 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 3:44:10 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 3:44:10 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_I7XHN2JZ" class="item attachment">
+			<h2>cii_4673_e_y_claims_research_report_web_v1b.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cii.co.uk/media/4212695/cii_4673_e_y_claims_research_report_web_v1b.pdf">https://www.cii.co.uk/media/4212695/cii_4673_e_y_claims_research_report_web_v1b.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:49:17 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:49:17 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:49:17 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_XAAAMX9J" class="item webpage">
+			<h2>Claims Acceptance Rates 17/18 ABI</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-GB</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/data-and-resources/industry-data/claims-acceptance-rates/">https://www.abi.org.uk/data-and-resources/industry-data/claims-acceptance-rates/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:49:15 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:49:15 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:49:15 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_HR7NU479">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QZ9FM5ES" class="item webpage">
+			<h2>Claims Handling</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>16i- https://www.16i.co.uk</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>We have over 10 years of handling outsource claims and at the forefront of our success is the customer journey.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.dacbeachcroft.com/en/gb/expertise/services/claims-solutions-group/casualty/claims-handling">https://www.dacbeachcroft.com/en/gb/expertise/services/claims-solutions-group/casualty/claims-handling</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:52:33 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>DAC Beachcroft</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:52:33 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:52:33 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_PBTPYK57">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GU66MYCB" class="item journalArticle">
+			<h2>Claims Management Companies</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Timothy Edmonds</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This note outlines the regulatory structure surrounding claims
+ management companies. Concern has been expressed about their 
+activities, especially in the context of motor insurance claims. 
+Examples of individuals receiving unsolicited invitations to make false,
+ or exaggerated claims, have led to concern about the impact of such 
+activity on premium levels.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>18</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:14 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:14 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_PURPVQMN">Edmonds - Claims Management Companies.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CZUIPCA3" class="item journalArticle">
+			<h2>Claims Management Regulation Annual Report</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>51</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 3:53:07 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 3:53:07 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_KXJ7TBWP">Claims Management Regulation Annual Report.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5TVX6IPR" class="item journalArticle">
+			<h2>Claims workforce of the future – London Market</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>24</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 3:55:43 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 3:55:43 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_BMR3G74Q">Claims workforce of the future – London Market.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_FKZIJ3GP" class="item journalArticle">
+			<h2>Claims workforce of the future – London Market</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>24</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:05 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:05 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_9Y942SRG">Claims workforce of the future – London Market.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5EHMCZR4" class="item webpage">
+			<h2>Controlling Claims Leakage through Technology | Expert Commentary | IRMI.com</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.irmi.com/articles/expert-commentary/controlling-claims-leakage-through-technology">https://www.irmi.com/articles/expert-commentary/controlling-claims-leakage-through-technology</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:50:28 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:50:28 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:50:28 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_TK2RAC49">Controlling Claims Leakage through Technology | Expert Commentary | IRMI.com					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_TVVGIC5I" class="item attachment">
+			<h2>Delegated Claims Oversight Strategy.PDF</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_ZYQY5YJ9" class="item webpage">
+			<h2>Detected Insurance Fraud - new data shows that every five minutes a fraudulent claim is discovered ABI</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The industry’s relentless pursuit of insurance cheats to 
+protect honest customers is delivering results, with the equivalent of 
+nearly 300 fraudulent claims and just over 2,000 dishonest applications 
+being detected every day according to the ABI’s most in depth annual 
+insurance fraud figures out today.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-GB</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/news/news-articles/2020/09/detected-insurance-fraud/">https://www.abi.org.uk/news/news-articles/2020/09/detected-insurance-fraud/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:47:37 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:47:37 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:47:37 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_KAEQZ7TJ">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_D5C4EXQ9" class="item webpage">
+			<h2>Fraud data ABI</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The ABI collects information annually regarding detected fraud
+ to provide its members and wider stakeholders with an indication of the
+ extent of fraud that the industry faces at both the application and 
+claims stage.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-GB</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/products-and-issues/topics-and-issues/fraud/fraud-data/">https://www.abi.org.uk/products-and-issues/topics-and-issues/fraud/fraud-data/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:47:43 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:47:43 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:47:43 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_263SADHW">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3UGR54FM" class="item webpage">
+			<h2>Fraudulent claims increased last year, says ABI - Claims Media</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.claimsmag.co.uk/2020/09/fraudulent-claims-increased-last-year-says-abi/16952">https://www.claimsmag.co.uk/2020/09/fraudulent-claims-increased-last-year-says-abi/16952</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:51:04 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:51:04 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:51:04 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_MGF7L9GK">Fraudulent claims increased last year, says ABI - Claims Media					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_9WLWK435" class="item blogPost">
+			<h2>Functions and Advantages of a Claims Processing Software</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Blog Post</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Claims processing is an important business function for 
+Insurance companies, public entities and risk managers. The claims have 
+to be handled timely to ensure quick settlement leading to customer 
+satisfaction. Claims processing software is beneficial as it helps to 
+effectively manage and analyze information pertaining to claims. The 
+claims processing software helps to automate the entire system of claims
+ management by reducing the settlement time and enhancing the customer 
+service. It provides faster and intuitive access to claims data records 
+which help in making effective decisions.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://jdidata.com/blog/functions-and-advantages-of-a-claims-processing-software/">https://jdidata.com/blog/functions-and-advantages-of-a-claims-processing-software/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 3:59:25 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 3:59:25 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 3:59:25 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_8SEWYVSE">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CXSNWB27" class="item webpage">
+			<h2>Grappling with indemnity spend | Celent</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The British property insurance market is a sizable one, and is
+ the second largest sector in general insurance, after motor, with a 
+reported prem…</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.celent.com/insights/820906005">https://www.celent.com/insights/820906005</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:50:36 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:50:36 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:50:36 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_AJQLP4RQ">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_LSU9HSV5" class="item webpage">
+			<h2>Improving Claims Handling Is Core to Insurer Transformation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>MarkLogic's Rodrigo DeCossio provides highlights from his 
+presentation at Claims Club Summit on how insurers can revolutionise 
+claims handling with an operational data hub.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018-10-15T20:30:00+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.marklogic.com/blog/improving-claims-handling-is-core-to-insurer-transformation/">https://www.marklogic.com/blog/improving-claims-handling-is-core-to-insurer-transformation/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 3:58:43 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>MarkLogic</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 3:58:43 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 3:58:43 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_8M8V4BJ3">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RIZAZM8I" class="item journalArticle">
+			<h2>In a changing world, how do you build a claims function with a smarter edge?</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>11</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 4:00:26 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 4:00:26 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_V6FH2BVA">In a changing world, how do you build a claims fun.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RG5PT533" class="item webpage">
+			<h2>Insurance Post Claims &amp; Fraud Awards 2020: winners revealed</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Today is the day we can finally reveal the winners of the Insurance Post Claims and Fraud Awards 2020.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020-10-01T13:00:15+01:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Insurance Post Claims &amp; Fraud Awards 2020</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.postonline.co.uk/node/7689976">https://www.postonline.co.uk/node/7689976</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:21 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Insurance Post</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:21 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:21 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_SU2BD6IW">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Y4R5I9PL" class="item webpage">
+			<h2>Insurers uncover 300 false claims every day as motor scams increase</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Insurers uncovered 300 bogus insurance claims a day last year –
+ the equivalent of one every five minutes – according to new figures.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-gb</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://uk.motor1.com/news/442780/false-insurance-claims-uk-2019/">https://uk.motor1.com/news/442780/false-insurance-claims-uk-2019/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:50:57 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Motor1.com</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:50:57 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:50:57 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_MQBWTH9M">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2GHQF2K7" class="item attachment">
+			<h2>key_facts_2019_spread.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/globalassets/files/publications/public/key-facts/key_facts_2019_spread.pdf">https://www.abi.org.uk/globalassets/files/publications/public/key-facts/key_facts_2019_spread.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/9/2020, 1:24:33 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/9/2020, 1:24:33 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/9/2020, 1:24:33 PM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_GTDYNXD2" class="item attachment">
+			<h2>LMA_ClaimsCurriculumEvolution_Phase1.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_43TIE5EG" class="item attachment">
+			<h2>LMAGuideClaims2019.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:35:02 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_ETX8R73X" class="item webpage">
+			<h2>Motor claims fell significantly in Quarter 2, though the average claim value reached a record high ABI</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>As expected, the number of motor insurance claims notified to 
+insurers in the second quarter of the year fell significantly according 
+to figures out today from the Association of British Insurers (ABI).</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-GB</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/news/news-articles/2020/09/motor-claims-fell-significantly-in-q2/">https://www.abi.org.uk/news/news-articles/2020/09/motor-claims-fell-significantly-in-q2/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:47:49 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:47:49 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:47:49 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_YTV7U9LB">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_57A4VQ98" class="item webpage">
+			<h2>Motor market set for challenging future amid high claims inflation – Moody’s | Online only | Insurance Times</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.insurancetimes.co.uk/news/motor-market-set-for-challenging-future-amid-high-claims-inflation-moodys/1432478.article">https://www.insurancetimes.co.uk/news/motor-market-set-for-challenging-future-amid-high-claims-inflation-moodys/1432478.article</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:50:52 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:50:52 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:50:52 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_BTJM6697">Motor market set for challenging future amid high claims inflation – Moody’s | Online only | Insurance Times					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_274BFJH4" class="item journalArticle">
+			<h2>Operational excellence in insurance</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>28</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:41:04 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:41:04 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_M9GGSE5F">2019 - Operational excellence in insurance.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_JWPI882L" class="item journalArticle">
+			<h2>Operational excellence in insurance</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>28</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:08 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:08 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_DTVR83ZG">2019 - Operational excellence in insurance.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ISYK3CLH" class="item webpage">
+			<h2>Qapter</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Solera’s revolutionary end-to-end artificial intelligence claims platform. The intelligent path forward.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://qapter.com/">https://qapter.com/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 5:32:36 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>Solera | Qapter</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 5:32:36 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 5:32:36 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_SEVY9E2G">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6YHN8CQY" class="item attachment">
+			<h2>Rethinking_Claims-Achieving_High_Performance_in_the_Insurance_Industry_through_Claims_Transformation.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://insuranceblog.accenture.com/wp-content/uploads/2013/07/Rethinking_Claims-Achieving_High_Performance_in_the_Insurance_Industry_through_Claims_Transformation.pdf">https://insuranceblog.accenture.com/wp-content/uploads/2013/07/Rethinking_Claims-Achieving_High_Performance_in_the_Insurance_Industry_through_Claims_Transformation.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:14 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:14 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:14 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_ZNWUKUXZ" class="item attachment">
+			<h2>sustainable-claims-management-report.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cisl.cam.ac.uk/business-action/sustainable-finance/climatewise/pdfs/sustainable-claims-management-report.pdf">https://www.cisl.cam.ac.uk/business-action/sustainable-finance/climatewise/pdfs/sustainable-claims-management-report.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 3:51:53 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 3:51:53 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 3:51:53 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_E6HQWPVV" class="item attachment">
+			<h2>sustainable-claims-management-report.pdf</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Attachment</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.cisl.cam.ac.uk/business-action/sustainable-finance/climatewise/pdfs/sustainable-claims-management-report.pdf">https://www.cisl.cam.ac.uk/business-action/sustainable-finance/climatewise/pdfs/sustainable-claims-management-report.pdf</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:49 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:49 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:49 AM</td>
+					</tr>
+				</tbody></table>
+			</li>
+
+
+			<li id="item_LHBBT2Z7" class="item journalArticle">
+			<h2>TECHNOLOGY-DRIVEN VALUE GENERATION IN INSURANCE</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>56</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/9/2020, 12:12:17 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/9/2020, 12:12:17 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_IHNHNA7G">2017 - TECHNOLOGY-DRIVEN VALUE GENERATION IN INSURANCE.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Y4N2BPAR" class="item journalArticle">
+			<h2>TECHNOLOGY-DRIVEN VALUE GENERATION IN INSURANCE</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>56</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/9/2020, 4:50:58 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/9/2020, 4:50:58 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_2KYP3WTC">2017 - TECHNOLOGY-DRIVEN VALUE GENERATION IN INSURANCE.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_BFBXCK4J" class="item webpage">
+			<h2>Technology’s role in the future of sustainability ABI</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The insurance industry has the opportunity to transform how it
+ works and at the same time drive positive outcomes for customers, 
+employees, investors and the planet. Please join us on 1 December 2020 
+as we look at how technology providers will shape the sustainability 
+agenda in 2021 – both within the immediate fallout of Covid-19 and 
+beyond.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-GB</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.abi.org.uk/news/blog-articles/2020/11/technologys-role-in-the-future-of-sustainability/">https://www.abi.org.uk/news/blog-articles/2020/11/technologys-role-in-the-future-of-sustainability/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:49:27 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:49:27 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:49:27 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_26HHRYJE">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_RHI2SWHM" class="item webpage">
+			<h2>The Future Of Insurance Claims Is Now</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Oliver Wyman</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Changed customer expectations, new technologies, and new market entrants require insurers to rethink the claims journey.</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.oliverwyman.com/our-expertise/insights/2018/jun/the-future-of-insurance-claims-is-now.html">https://www.oliverwyman.com/our-expertise/insights/2018/jun/the-future-of-insurance-claims-is-now.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:50:26 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:50:26 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:50:26 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_4KRT59MR">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8VSK7CIX" class="item webpage">
+			<h2>The new claims organization - KPMG Global</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gary Plotkin,Ali Geramian,Pat Kneeland</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Insurers are creating a "purpose-driven" claims approach to deliver exceptional customer experience and operational efficiency.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020-01-15</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://home.kpmg/xx/en/home/insights/2020/01/the-new-claims-organization-customer-experience-and-operational-efficiency-together.html">https://home.kpmg/xx/en/home/insights/2020/01/the-new-claims-organization-customer-experience-and-operational-efficiency-together.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 3:59:08 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>KPMG</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 3:59:08 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 3:59:08 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_7ZXXWVAZ">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2YYTNWFW" class="item journalArticle">
+			<h2>The UK insurance growth action plan</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>Zotero</td>
+					</tr>
+					<tr>
+					<th>Pages</th>
+						<td>31</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:49:11 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:49:11 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_6YQNG958">2013 - The UK insurance growth action plan.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2L8UXFPA" class="item blogPost">
+			<h2>Top Features of an Effective Claims Management System</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Blog Post</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>If you want to get a claims management system for your insurance company, it should definitely have these ten useful features.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020-03-12T07:22:00+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-US</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://dassolutions.eu/effective-claims-management-system/">https://dassolutions.eu/effective-claims-management-system/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 3:58:47 PM</td>
+					</tr>
+					<tr>
+					<th>Blog Title</th>
+						<td>DAS Solutions</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 3:58:47 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 3:58:47 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_VCL93Y7U">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GZQYCABN" class="item webpage">
+			<h2>Two Steps to Improve the Claims Process</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.marsh.com/uk/insights/risk-in-context/two-steps-to-improve-insurance-claims.html">https://www.marsh.com/uk/insights/risk-in-context/two-steps-to-improve-insurance-claims.html</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:56 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:56 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:56 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_VYZLEE9G">Two Steps to Improve the Claims Process					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_84T3JKC7" class="item webpage">
+			<h2>U.K. Insurers: Steering Through A Chaotic World</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Although S&amp;P Global Ratings anticipates that profitability
+ at rated U.K. insurers will be dented in 2020 (as detailed in table 2 
+of the appendix) across the industry we expect profitability to 
+normalize in 2021 and that the impact on ratings will be limited. There 
+is still uncertainty regarding the evolution of the pandemic, and the 
+U.K.'s abrupt switch to a bare-bones trade agreement with the EU from 
+Jan. 1, 2021. In our view, insurers' investment exposure to 
+pandemic-fueled market volatility will remain their main source of loss.
+ We regard insured losses from the pandemic in 2020 and 2021 as an 
+earnings event for the industry, rather than a capital event. In 
+September, the Association of British Insurers (ABI) estimated 
+COVID-19-related</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-us</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>U.K. Insurers</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.spglobal.com/ratings/en/research/articles/201118-u-k-insurers-steering-through-a-chaotic-world-11725361">https://www.spglobal.com/ratings/en/research/articles/201118-u-k-insurers-steering-through-a-chaotic-world-11725361</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:52:13 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:52:13 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:52:13 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_GPK3GLPH">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_4XXJIRT2" class="item webpage">
+			<h2>UK motor claims inflation outpacing rate increases: Moody’s - Reinsurance News</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Analysts at Moody’s have reported that claims in the UK motor 
+insurance sector are increasing at a faster pace than premium pricing, 
+which is challenging</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020-02-11T11:30:59+00:00</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>UK motor claims inflation outpacing rate increases</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.reinsurancene.ws/uk-motor-claims-inflation-outpacing-rate-increases-moodys/">https://www.reinsurancene.ws/uk-motor-claims-inflation-outpacing-rate-increases-moodys/</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:52:25 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>ReinsuranceNe.ws</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:52:25 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:52:25 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_6KPTKPDY">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SK85XGZ4" class="item webpage">
+			<h2>What the Future at Lloyd's means for Claims</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.lmalloyds.com/LMA/News/Blog/Claims.aspx">https://www.lmalloyds.com/LMA/News/Blog/Claims.aspx</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/7/2020, 4:09:34 AM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/7/2020, 4:09:34 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/7/2020, 4:09:34 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_7EQBBY78">What the Future at Lloyd's means for Claims					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_G58TJMIM" class="item webpage">
+			<h2>Your guide to dealing with small claims cases - J&amp;P Credit Solutions, Debt Recovery Solicitors</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>How to tackle the obstacles that typically derive from dealing with small claims cases</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://www.jpcreditsolutions.co.uk/site/about/blog/your-guide-to-dealing-with-small-claims-cases">https://www.jpcreditsolutions.co.uk/site/about/blog/your-guide-to-dealing-with-small-claims-cases</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>12/10/2020, 11:48:11 AM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>J&amp;P Credit Solutions</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>12/10/2020, 11:48:11 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>12/10/2020, 11:48:11 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_XBCE5CD2">Snapshot					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
